@@ -33,4 +33,70 @@ form input, form textarea {
   padding: 0.5em;
   margin-top: 0.5em;
 }
+/* Layout wrapper for content and sidebar */
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Main content area */
+.main-content {
+  flex: 2;
+  min-width: 60%;
+}
+
+/* Sidebar on the right */
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f0f0f8;
+  padding: 1rem;
+  border-left: 2px solid #ddd;
+}
+
+/* Extra resources section at the bottom */
+.extra-resources {
+  margin: 2rem 1rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-top: 2px solid #ccc;
+}
+
+.extra-resources h3,
+.sidebar h3 {
+  margin-top: 0;
+}
+
+/* Lists */
+.sidebar ul,
+.extra-resources ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.sidebar ul li,
+.extra-resources ul li {
+  margin: 0.5rem 0;
+}
+
+.sidebar ul li a,
+.extra-resources ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover,
+.extra-resources ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
+
 
