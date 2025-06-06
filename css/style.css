@@ -4,19 +4,58 @@ body {
   padding: 0;
   line-height: 1.6;
 }
-
 header, footer {
-  background-color: #222;
-  color: #fff;
-  padding: 1em;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #f3f4f6;
+  padding: 2rem 1rem;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1, footer p {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+footer p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: #1e293b; /* deep slate blue-gray */
 }
 
 nav a {
-  color: #ffcc00;
-  margin: 0 10px;
+  color: #facc15; /* soft golden yellow */
+  font-weight: 500;
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
 }
+
+nav a:hover {
+  background-color: rgba(250, 204, 21, 0.15); /* subtle gold tint */
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
 
 main {
   padding: 20px;
@@ -98,5 +137,43 @@ form input, form textarea {
     flex-direction: column;
   }
 }
+.tutorial-section {
+  margin-top: 2rem;
+}
 
+.tutorial-section h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
 
+.tutorial-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tutorial-links li {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.tutorial-links li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-links a {
+  color: #0056b3;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.tutorial-links a:hover {
+  text-decoration: underline;
+}
